@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { host } from '../../App';
 
 function Login() {
     const navigate = useNavigate();
+    const [incorrect, setIncorrect] = useState(false);
+    const formRef = useRef(null);
 
     const fetchLogin = (event) => {
         event.preventDefault();
@@ -25,16 +27,21 @@ function Login() {
                     navigate("/");
                 }
             })
+            .catch(error => {
+                setIncorrect(true);
+                formRef.current.reset()
+            })
     }
 
     return (
         <div className='main'>
             <div className='box'>
                 <h1 className='fx-center'>Iniciar sesión</h1>
-                <form onSubmit={fetchLogin} className='fx-col w250'>
+                <form onSubmit={fetchLogin} className='fx-col w250' ref={formRef}>
                     <input id='codigo' required placeholder="Codigo" className='h20 pad10' />
                     <input type='password' id='password' required placeholder="Contraseña" className='mar15 h20 pad10' />
-                    <button type='submit' className='button mar30 h30'>Iniciar</button>
+                    {incorrect ? <p className='font-small cred'>Usuario o contraseña incorrecta</p> : <p className='font-small'>&nbsp;</p>}
+                    <button type='submit' className='button mar20 h30'>Iniciar</button>
                 </form>
             </div>
         </div>

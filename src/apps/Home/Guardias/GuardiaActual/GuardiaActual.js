@@ -109,7 +109,7 @@ function GuardiaAcutual() {
         return (
             <div className='box'>
                 <h2>Ninguna guardia abierta</h2>
-                <button className='button' onClick={fetchUpdateGuardia}>Abrir guardia</button>
+                <button className='button h30' onClick={fetchUpdateGuardia}>Abrir guardia</button>
             </div>)
     }
 

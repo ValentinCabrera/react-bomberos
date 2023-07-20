@@ -24,6 +24,10 @@ code {
   color: var(--c1);
 }
 
+.cred {
+  color: red;
+}
+
 .box {
   display: flex;
   flex-direction: column;
@@ -176,4 +180,8 @@ code {
 
 .mar30 {
   margin-top: 30px;
+}
+
+.font-small {
+  font-size: 12px;
 }

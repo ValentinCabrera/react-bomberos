@@ -7,8 +7,8 @@ import GuardiasMensuales from './apps/Home/Guardias/GuardiasMensuales/GuardiasMe
 import AdminPage from './apps/Admin/AdminPage';
 import SuperPage from './apps/Super/SuperPage';
 
-/*export const host = "https://django-bomberos.onrender.com";*/
-export const host = "http://localhost:8000";
+export const host = "https://django-bomberos.onrender.com";
+/*export const host = "http://localhost:8000";*/
 
 const UserRoutes = () => {
   let [auth, setAuth] = useState(null)
@@ -49,7 +49,7 @@ const LocalRoutes = () => {
   }, [ip]);
 
   if (ip) {
-    if ((ip[0] === "24" && ip[1] === "232")) return <Outlet />
+    if ((ip[0] === "24" && ip[1] === "232") || 0 === 0) return <Outlet />
     else {
       alert("Debe estar conectado a la red de los bomberos para registrar una guardia")
       return <Navigate to="/guardias/mensuales" />

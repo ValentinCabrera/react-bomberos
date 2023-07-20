@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { host } from '../../App';
-import NavBar from "./componentes/NavBar";
 
 function ListarBomberos() {
     const [bomberos, setBomberos] = useState(null);
@@ -29,11 +28,8 @@ function ListarBomberos() {
     }
 
     return (
-        <div>
-            <NavBar />
-            <div className="main">
-                {bomberos ? renderList() : null}
-            </div>
+        <div className="main">
+            {bomberos ? renderList() : null}
         </div>
     )
 
