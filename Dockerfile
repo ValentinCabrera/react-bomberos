@@ -12,4 +12,4 @@ EXPOSE 3000
 
 RUN npm run build
 
-CMD ["sh", "-c", "ulimit -n 8192 && npm start"]
+CMD ["npm", "start"]
