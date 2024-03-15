@@ -7,10 +7,11 @@ import GuardiasMensuales from './apps/Home/Guardias/GuardiasMensuales/GuardiasMe
 import AdminPage from './apps/Admin/AdminPage';
 import SuperPage from './apps/Super/SuperPage';
 
-export const host = "https://django-bomberos.onrender.com";
 /*
-export const host = "http://localhost:8000";
+export const host = "https://django-bomberos.onrender.com";
 */
+
+export const host = "http://152.168.125.242:8000";
 
 const UserRoutes = () => {
   let [auth, setAuth] = useState(null)

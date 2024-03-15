@@ -9,12 +9,12 @@ function AdminPage() {
     return (
         <div>
             <div className="navbar">
-                <div className="w250 fx-sep fx-row">
+                <div className="fx-row">
                     <button className="button h40" onClick={() => setActualPage(0)}>Guardias abiertas</button>
                     <button className="button h40" onClick={() => setActualPage(1)}>Guardias a revisar</button>
                 </div>
                 <div>
-                    <h4 className='c1'>{localStorage.getItem("nombre")} {localStorage.getItem("apellido")}</h4>
+                    <h4 className='c1 right'>{localStorage.getItem("nombre")} {localStorage.getItem("apellido")}</h4>
                 </div>
             </div>
             <div className="main">

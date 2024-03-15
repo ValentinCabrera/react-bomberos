@@ -31,7 +31,7 @@ function GuardiasMensuales() {
         return (
             <div className="fx-col fx-center">
                 <h2 className="box">Horas totales: {data.horasTotales} horas</h2>
-                <div className="fx-row fx-center fx-sep w400">
+                <div className="fx-row fx-center fx-sep">
                     {renderMonthOptions()}
                     {renderYearsOptions()}
                 </div>

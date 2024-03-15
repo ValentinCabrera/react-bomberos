@@ -49,8 +49,7 @@ code {
 }
 
 .navbar > div {
-  margin-right: 50px;
-  margin-left: 50px;
+  flex: 1;
 }
 
 .main {
@@ -131,7 +130,11 @@ code {
 
 }
 
-
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
 
 .w300{
   width: 300px;

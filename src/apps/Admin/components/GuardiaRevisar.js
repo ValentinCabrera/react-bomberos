@@ -14,7 +14,7 @@ function GuardiaRevisar(props) {
     }
 
     return (
-        <div className='box w400'>
+        <div className='box'>
             <div className='fx-row fx-sep'>
                 <p>{props.guardia.bombero.nombre} {props.guardia.bombero.apellido}</p>
                 <p>{props.guardia.bombero.codigo}</p>
@@ -27,7 +27,7 @@ function GuardiaRevisar(props) {
                         <p>{props.guardia.horaEntrada} hs</p>
                     </div>
 
-                    <div className='fx-col fx-sep'>
+                    <div className='fx-col fx-sep pad10'>
                         <h2>Salida</h2>
                         <p>{props.guardia.fechaSalida}</p>
                         <p>{props.guardia.horaSalida} hs</p>

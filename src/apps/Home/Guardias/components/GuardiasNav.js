@@ -8,12 +8,12 @@ function GuardiasNav() {
 
     return (
         <div className='navbar'>
-            <div className='w250 fx-sep fx-row'>
+            <div className='fx-row'>
                 <button className='h40 button' onClick={() => navigate("/guardias/actual")}>Guardia actual</button>
                 <button className='h40 button' onClick={() => navigate("/guardias/mensuales")}>Guardias mensuales</button>
             </div>
             <div>
-                <h4 className='c1'>{localStorage.getItem("nombre")} {localStorage.getItem("apellido")}</h4>
+                <h4 className='c1 right'>{localStorage.getItem("nombre")} {localStorage.getItem("apellido")}</h4>
             </div>
         </div>
     );

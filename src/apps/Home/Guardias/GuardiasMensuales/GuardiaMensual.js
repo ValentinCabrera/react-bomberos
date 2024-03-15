@@ -3,7 +3,7 @@ import React from 'react';
 function Guardia(props) {
     return (
         <div className="box">
-            <div className='fx-row fx-sep w400'>
+            <div className='fx-row fx-sep'>
                 <div className='entrada-cont'>
                     <h3>Entrada</h3>
                     <p>{props.guardia.fechaEntrada}</p>

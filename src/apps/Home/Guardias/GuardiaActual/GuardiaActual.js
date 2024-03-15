@@ -83,7 +83,7 @@ function GuardiaAcutual() {
 
             <div className='box'>
                 <h1 className='fx-center fx-col' > Guardia abierta</h1>
-                <div className='fx-row fx-sep w300'>
+                <div className='fx-row fx-sep'>
                     <p>{data.fechaEntrada}</p>
                     <p>{data.horaEntrada} hs</p>
                 </div>
